@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  scroll-snap-type:y mandatory;
+  
+}
+canvas {
+  display: block;
+}
+
+#canvas3d {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+section {
+  width:100%;
+  height: 100vh;
+  opacity: .3;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+section:nth-child(1) {
+  background-color: aqua;
+}
+section:nth-child(2) {
+  background-color: cornsilk;
+  
+}
+section:nth-child(3) {
+  background-color: plum;
+}
+section:nth-child(4) {
+  background-color: mistyrose;
+}
+
+body {
+  overflow:scroll;
+}
